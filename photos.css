@@ -1,0 +1,177 @@
+*{margin:0px; padding:0px;}
+
+@font-face  {
+    font-family: 'FUNFLOWSURVIVORKR';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/FUNFLOWSURVIVORKR.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+header {
+    width: 100%;
+    height: 50px;
+    margin: 0px auto;
+    padding: 0px 50px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000; 
+}
+body {
+    background-color: #000;
+}
+.logo {
+    width: 160px;
+    height: 50px;
+    background-image: url(image/logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.search_box {
+    border-radius: 10px;
+    width: 200px;
+    height: 30px;
+    border: 1px solid #5c5c5c;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+}
+.search_box > div {
+    border-radius: 10px;
+    width: 30px;
+    height: 30px;
+    background-image: url(image/search.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.search_box > input {
+    border: 0px;
+}
+.search_box > input {
+    appearance: none;
+    border: 0px;
+    outline: none;
+}
+
+.sns_box {
+    width: 170px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 60px;
+}
+.sns_box > div {
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.facebook{
+    background-image: url(image/facebook.png);
+}
+.instagram{
+    background-image: url(image/instagram.png);
+}
+.behance{
+    background-image: url(image/behance.png);
+}
+
+nav {
+    font-family: 'FUNFLOWSURVIVORKR';
+    width: 100%;
+    height: 50px;
+    margin: 0px auto;
+    padding: 0px 50px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    background-color: #0c0c0c;
+}
+nav > a {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+}
+nav > a::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: -5px;
+    width: 0px;
+    height: 2px;
+    background-color: #00ffff;
+    transition: all 0.3s ease;
+}
+nav > a:hover {
+    color: #00ffff;
+}
+nav > a:hover::after {
+    width: 100%;
+}
+nav > a:first-child {
+    margin-left: auto;
+}
+
+section{
+    position: relative;
+    right: 0;
+    width: 100%;
+    display: block;
+    height: 100vh;
+    padding: 0;
+}
+
+.contents{
+    display : flex;
+    flex-direction : column;
+    justify-content : center;
+    align-items : center;
+    text-align : center;
+    margin : 70px 50px 0 50px;
+  }
+  .contents .block{
+    display : flex;
+    flex-direction : row;
+    justify-content : space-between;
+  }
+  .contents .block .image{
+    display : flex;
+    flex-direction : column;
+    width : 35%;
+    padding: 2px;
+  }
+  .contents .block .image img{
+    padding : 2px;
+    width : 100%;
+    border-radius: 10px;
+  }
+
+footer {
+    width: 100%;
+    height: 100px;
+    margin: 0px auto;
+    padding: 0px 50px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #0c0c0c;
+}
+footer > div {
+    color: #fff;
+    font-size: 13px;
+}
